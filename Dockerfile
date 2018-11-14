@@ -17,6 +17,9 @@ RUN apk add --update \
     py-pip \
     build-base
 
+RUN npm -g uninstall yarn
+RUN npm -g install yarn
+
 RUN yarn
 RUN yarn global add express-generator@4.16.0
 RUN yarn add nodemon
