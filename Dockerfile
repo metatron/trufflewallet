@@ -34,12 +34,12 @@ RUN yarn global add truffle
 
 RUN git config --global url."https://".insteadOf git://
 
+
+# ディレクトリを作成
+WORKDIR /src
+
 RUN yarn install
 
-
-
-# ディレクトリを移動する
-WORKDIR /src
 
 
 # ポート3000番を開放する
