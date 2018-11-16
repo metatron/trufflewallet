@@ -32,6 +32,8 @@ RUN yarn add tsc
 
 RUN yarn global add truffle
 
+RUN git config --global url."https://".insteadOf git://
+
 RUN yarn install
 
 
